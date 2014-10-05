@@ -23,7 +23,7 @@ public class Spider  implements Runnable {
     public void run() {
         String html ;
          
-        ImageInterface url = new BaiduImage();		//接口
+        ImageInterface url = new BaiduImage();		//ImageInterface接口，自由替换
         for(;;) {
         	url.init();
             try {
