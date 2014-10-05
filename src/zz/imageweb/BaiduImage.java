@@ -1,8 +1,6 @@
 package zz.imageweb;
 
 import java.net.URLEncoder;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -17,9 +15,6 @@ public class BaiduImage extends ImageInterface {
 	private static String tag1 = ZZConfig.BAIDUTAG;
 	private static String tag2 = ZZConfig.BAIDUTAG2;
 	private static String column = ZZConfig.BAIDUTAG;
-	
-	//线程池
-	ExecutorService pool = Executors.newFixedThreadPool(20);
 	
 	static{
 		tag = encoder(tag);

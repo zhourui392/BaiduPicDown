@@ -12,7 +12,7 @@ public abstract class ImageInterface {
 	
 	//创建一个可重用固定线程数的线程池
 
-    public ExecutorService pool = Executors.newFixedThreadPool(2);
+    protected ExecutorService pool = Executors.newFixedThreadPool(20);
 	
 	public abstract void init();
 	public abstract void next();
